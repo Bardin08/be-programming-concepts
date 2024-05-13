@@ -1,19 +1,27 @@
-# Solutions will be added on the May 17, 2024.
-
 # 1. Basic Arithmetic:
 number1 = int(input("First number: "))
 number2 = int(input("Second number: "))
 
-print(f"Add: {number1 + number2}")
-print(f"Sub: {number1 - number2}")
-print(f"Mul: {number1 * number2}")
-print(f"Div: {number1 / number2}")
-print(f"Mod: {number1 % number2}")
+addition = number1 + number2
+subtraction = number1 - number2
+multiplication = number1 * number2
+division = number1 / number2
+modulo = number1 % number2
+
+print(f"{addition} (addition), {subtraction} (subtraction), {multiplication} (multiplication), "
+      f"{division} (division), {modulo} (modulo)")
+
+# -- Option 2 --
+print(f"{addition} (addition),", end=" ")
+print(f"{subtraction} (subtraction),", end=" ")
+print(f"{multiplication} (multiplication),", end=" ")
+print(f"{division} (division),", end=" ")
+print(f"{modulo} (modulo)")
 
 #  2. Temperature Conversion:
 
 celsius_input = float(input("Specify a temperature in Celsius: "))
-celsius_to_fahrenheit = (celsius_input * 9/5) + 32
+celsius_to_fahrenheit = (celsius_input * 9 / 5) + 32
 
 print(celsius_to_fahrenheit)
 
@@ -24,7 +32,7 @@ input_string = input("Write something here: ")
 print(len(input_string))
 print(input_string[0])
 print(input_string[-1])
-print(input_string[::-1]) # or input_string.reverse()
+print(input_string[::-1])  # or input_string.reverse()
 
 # 4. Even or Odd:
 
@@ -35,6 +43,7 @@ else:
     even_or_odd = "Odd"
 
 print(even_or_odd)
+
 # One row example:
 # even_or_odd = "Even" if number_input % 2 == 0 else "Odd"
 
@@ -108,9 +117,8 @@ b = input("Second value: ")
 temp = a
 a = b
 b = temp
+
 # OR:
 # a, b = b, a
 
 print(f'a = {a}, b = {b}')
-
-
