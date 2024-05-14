@@ -45,8 +45,8 @@ conditions.
 
 8. Calculator (Extended):
 
-   Task: Extend the Simple Calculator from Practice 1 to handle additional operations like exponentiation, square root,
-   and trigonometric functions (using the math module).
+   Task: Extend the Simple Calculator from Lecture 2 self practice to handle additional operations like 
+   exponentiation, square root, and trigonometric functions (using the math module).
 
 9. Number Guessing Game:
 
