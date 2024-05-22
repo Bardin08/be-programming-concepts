@@ -14,7 +14,7 @@ This document provides various Python exercises related to lists. These exercise
 
 ### 3. Check if a List is Empty or Not
 
-- **Task:** Write a Python program to check if a list is empty or not. If it isn't empty, add random numbers. Ask the user for input.
+- **Task:** Write a Python program to check if a list is empty or not. Ask the user for input.
 
 ### 4. Get the Largest Number from a List
 
@@ -37,11 +37,11 @@ This document provides various Python exercises related to lists. These exercise
 
 ### 8. Check for Common Members in Two Lists
 
-- **Task:** Write a Python function that takes two lists and returns True if they have at least one common member. Ask the user for input.
+- **Task:** Write a Python program that takes two lists and prints True if they have at least one common member, otherwise prints False. Ask the user for input.
 
 ### 9. Check if Each Number is Prime in a List
 
-- **Task:** Write a Python program to check if each number is prime in a given list of numbers. Return True if all numbers are prime, otherwise False. Ask the user for input.
+- **Task:** Write a Python program to check if each number is prime in a given list of numbers. Print True if all numbers are prime, otherwise False. Ask the user for input.
 - **Validation:** Ensure that the user inputs integers only.
   - Example: [0, 3, 4, 7, 9] -> False
   - Example: [3, 5, 7, 13] -> True
