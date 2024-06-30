@@ -1,4 +1,19 @@
+import csv
 import random
+
+
+def save_results(secret, attempts, success):
+    headers = ["game number", "secret word", "attempts", "success"]
+    with open("results.csv", "a+") as file:
+        writer = csv.writer(file)
+        reader = csv.reader(file)
+
+        all_lines = len(list(reader))
+        if all_lines == 0:
+            writer.writerow(headers)
+
+        writer.writerow([all_lines, secret, attempts, success])
+
 
 MAX_ATTEMPTS = 6
 WORDS = ["apple", "rapid", "panda", "hello", "world", "grape", "melon"]
@@ -16,6 +31,8 @@ while attempt < MAX_ATTEMPTS:
 
     if guess == secret_word:
         print("You guessed correctly!👏")
+        save_results(secret_word, attempt, True)
+        break
 
     zipped_words = zip(guess, secret_word)
     for g, h in zipped_words:
@@ -28,4 +45,4 @@ while attempt < MAX_ATTEMPTS:
     print()
 else:
     print("You lost!😔")
-
+    save_results(secret_word, attempt, False)
